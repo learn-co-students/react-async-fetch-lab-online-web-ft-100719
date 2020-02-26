@@ -10,7 +10,7 @@ export default class App extends React.Component {
     render() {
         return (
         <div>
-            {this.state.people.map(person => person.name)}
+            {this.state.people.map((person, id) => <div key={id}>{person.name}</div>)}
         </div>
         )
     }
